@@ -56,3 +56,8 @@ $(document).ready(function(){
 $(function(){
   new WOW().init(); 
 });
+
+$(window).ready(function() { 
+  $(".loader-inner").fadeOut(); 
+  $(".loader").delay(400).fadeOut("slow"); 
+});
