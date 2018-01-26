@@ -1,0 +1,109 @@
+.header
+	min-height: 1000px
+	height: 100vh
+
+.top-line
+	padding-top: 50px
+	position: relative
+	z-index: 3
+	.hamburger
+		padding: 0
+		position: relative
+		top: 16px
+		width: 21px
+	.hamburger-box
+		width: 21px
+	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+		width: 20px
+		height: 3px
+		border-radius: 0
+
+	.hamburger-inner
+		&:before
+			top: -7px
+		&:after
+			top: 7px
+
+#my-menu nav.mm-menu div.mm-navbar a, nav.mm-menu div.mm-navbar>*
+	color: #000
+	letter-spacing: 3px
+	font-size: rem(20px)
+	font-weight: 700
+	font-family: 'Risque', cursive
+
+nav.mm-menu
+	background-color: $gray
+
+.my-menu__item
+	font-size: rem(18px)
+	color: $main-color
+	transition: .25s
+	font-family: 'Risque', cursive
+	&:hover
+		background-color: rgba(#000, .4)
+
+.site-logo
+	text-transform: uppercase
+	font-size: rem(18px)
+	font-weight: 700
+	a
+		color: $main-color
+
+.main-nav
+	text-align: right
+	color: $main-color
+	text-transform: uppercase
+	margin-top: -10px
+
+.main-nav__item
+	color: $main-color
+	font-weight: 700
+	margin-right: 20px
+	transition: .25s
+	&:last-child
+		margin-right: 0
+	&:hover
+		color: lighten($main-color, 25%)
+
+.flex-container
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	width: 100%
+	z-index: 1
+	display: flex
+	text-align: right
+
+
+.header-composition
+	position: relative
+	margin: auto
+	padding-top: 10%
+
+.site-title
+	font-weight: 900
+	text-transform: uppercase
+	font-size: rem(72px)
+	line-height: 1.4
+	position: relative
+	margin-bottom: 10px
+
+.header-divider
+	margin-top: -5px
+	margin-bottom: 35px
+	margin-left: auto
+	width: 138px
+	line-height: 0
+	height: 4px
+	background-color: lighten($main-color, 2%)
+
+.header-text
+	p
+		font-size: rem(18px)
+		&:last-child
+			margin-bottom: 50px
+
+.header-button
+	margin-bottom: 20px
