@@ -5,6 +5,7 @@
 @import url(../libs/hamburgers/hamburgers.min.css);
 @import url(../libs/owl-carousel/owl.carousel.min.css);
 @import url(../libs/owl-carousel/owl.theme.default.min.css);
+@import url(../libs/animate/animate.css);
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/fonts/icomoon.eot?dc3f0t");
