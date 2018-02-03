@@ -53,11 +53,53 @@ $(document).ready(function(){
   });
 });
 
-$(function(){
-  new WOW().init(); 
-});
-
 $(window).ready(function() { 
   $(".loader-inner").fadeOut(); 
   $(".loader").delay(400).fadeOut("slow"); 
+});
+
+$(function() {
+ $(".portfolio__tab-item").not(":first").hide();
+  $(".portfolio__tabs-wrapper .portfolio__tab").click(function() {
+    $(".portfolio__tabs-wrapper .portfolio__tab").removeClass("active").eq($(this).index()).addClass("active");
+    $(".portfolio__tab-item").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("active"); 
+});
+
+$(document).ready(function(){
+  $(".portfolio__carousel").owlCarousel({
+    margin: 0,
+    dots: true,
+    nav: false,
+    autoWidth: true,
+    responsive: {
+      480: {
+        items: 3
+      },
+      0: {
+        items: 1,
+        autoWidth: false
+      }
+    }
+  });
+});
+
+$(document).ready(function(){
+  $(".blog-carousel").owlCarousel({
+    dots: false,
+    nav: true,
+    margin: 80,
+    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    responsive: {
+      992: {
+        items:3
+      },
+      570: {
+        items: 2
+      },
+      0: {
+        items: 1
+      }
+    }
+  });
 });
