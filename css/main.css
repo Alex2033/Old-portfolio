@@ -5841,7 +5841,8 @@ img.mfp-img {
   position: relative;
   float: right;
   border: none;
-  display: none; }
+  display: none;
+  cursor: pointer; }
   .toggle-menu span {
     display: block; }
 

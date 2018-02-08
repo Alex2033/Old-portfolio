@@ -4,23 +4,21 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   if ($(window).width() <= 768) {
-    $(function () {
-      $(".toggle-menu").click(function() {
-        $(".sandwich").toggleClass("active");
-      });
+    $(".toggle-menu").click(function() {
+      $(".sandwich").toggleClass("active");
+    });
 
-      $(".main-nav").click(function() {
+    $(".main-nav").click(function() {
+      $(".main-nav").fadeOut(600);
+      $(".sandwich").toggleClass("active");
+    }).append("<span>");
+
+    $(".toggle-menu").click(function() {
+      if ($(".main-nav").is(":visible")) {
         $(".main-nav").fadeOut(600);
-        $(".sandwich").toggleClass("header active");
-      }).append("<span>");
-
-      $(".toggle-menu").click(function() {
-        if ($(".main-nav").is(":visible")) {
-          $(".main-nav").fadeOut(600);
-        } else {
-          $(".main-nav:hidden").fadeIn(600);
-        }
-      });
+      } else {
+        $(".main-nav:hidden").fadeIn(600);
+      }
     });
   } 
 });
