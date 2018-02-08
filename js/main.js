@@ -1,8 +1,4 @@
 $(document).ready(function(){
-    new WOW().init();
-});
-
-$(document).ready(function(){
   if ($(window).width() <= 768) {
     $(".toggle-menu").click(function() {
       $(".sandwich").toggleClass("active");
@@ -140,15 +136,6 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function(){
-  $(document).on('click', '.main-nav__item', function(event){
-      event.preventDefault();
-
-      $('html, body').animate({
-          scrollTop: $( $.attr(this, 'href') ).offset().top
-      }, 500);
-  });
-});
 
 $(document).ready(function() {
   $(".header-button .button").click(function() {
