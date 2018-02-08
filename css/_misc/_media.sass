@@ -6,6 +6,16 @@
 	.footer__links-item
 		margin-right: 25px
 
+	/* client-section */
+	.client-section
+		.owl-theme .owl-nav
+			div.owl-next
+				right: -8px
+				margin-top: 10px
+			div.owl-prev
+				left: -8px
+				margin-top: 10px
+
 @media (max-width: 480px)
 	.hidden-xxs
 		display: none
@@ -86,6 +96,39 @@
 		&:after
 			right: 50%
 			margin-right: -68px
+
+	.toggle-menu
+		display: block
+
+	.main-nav
+		display: none
+		position: fixed
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0,.9)
+		z-index: 100
+		top: 0
+		right: 0
+		padding-top: 180px
+		text-align: center
+		a
+			display: block
+			color: #fff
+			text-transform: uppercase
+			letter-spacing: 5px
+			position: relative
+			height: 60px
+			&:hover
+				color: $gray
+			span
+				display: block
+				position: relative
+				top: -40px
+				left: 0
+				height: 100%
+				transition: all 0.5s ease
+				&:hover
+					background-color: rgba(255,255,255,.08)
 
 	.header-divider
 		margin-left: auto

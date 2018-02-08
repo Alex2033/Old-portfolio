@@ -1,14 +1,31 @@
-$(function() {
-	$("#my-menu").mmenu({
-		extensions: [ 'widescreen', 'effect-menu-slide', 'pagedim-black'],
-		navbar: {
-			title: 'Main menu'
-		},
-		offCanvas: {
-			position: 'right'
-		}
-	});
+$(document).ready(function(){
+    new WOW().init();
 });
+
+$(document).ready(function(){
+  if ($(window).width() <= 768) {
+    $(function () {
+      $(".toggle-menu").click(function() {
+        $(".sandwich").toggleClass("active");
+      });
+
+      $(".main-nav").click(function() {
+        $(".main-nav").fadeOut(600);
+        $(".sandwich").toggleClass("header active");
+      }).append("<span>");
+
+      $(".toggle-menu").click(function() {
+        if ($(".main-nav").is(":visible")) {
+          $(".main-nav").fadeOut(600);
+        } else {
+          $(".main-nav:hidden").fadeIn(600);
+        }
+      });
+    });
+  } 
+});
+
+
 
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
@@ -27,6 +44,27 @@ $(document).ready(function(){
   			items:1
   		}
   	}
+  });
+});
+
+$(document).ready(function(){
+  $(".portfolio__img").magnificPopup({
+    type: "image",
+    gallery: {
+      enabled: true
+    },
+    removalDelay: 300,
+    closeOnBgClick: true,
+    fixedContentPos: false,
+    mainClass: "mfp-fade",
+    callbacks: {
+      open: function() {
+        jQuery('body').addClass('noscroll');
+        },
+        close: function() {
+        jQuery('body').removeClass('noscroll');
+        }
+      }
   });
 });
 
@@ -102,4 +140,30 @@ $(document).ready(function(){
       }
     }
   });
+});
+
+$(document).ready(function(){
+  $(document).on('click', '.main-nav__item', function(event){
+      event.preventDefault();
+
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+  });
+});
+
+$(document).ready(function() {
+  $(".header-button .button").click(function() {
+    $(".popup-window").css({"top": $(window).scrollTop() + 50}).addClass("active");
+    $(".bg-popup").fadeIn();
+
+    $(".bg-popup").click(function() {
+      $(".popup-window").removeClass("active");
+      $(".bg-popup").fadeOut();
+    });
+  });
+
+  $(window).scroll(function() {
+    $(".popup-window").css({"top": $(window).scrollTop() + 50})
+  }).scroll();
 });
