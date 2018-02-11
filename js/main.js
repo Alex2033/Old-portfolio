@@ -1,4 +1,14 @@
 $(document).ready(function(){
+  $(document).on('click', '.main-nav__item', function(event){
+      event.preventDefault();
+
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+  });
+});
+
+$(document).ready(function(){
   if ($(window).width() <= 768) {
     $(".toggle-menu").click(function() {
       $(".sandwich").toggleClass("active");
@@ -139,7 +149,7 @@ $(document).ready(function(){
 
 $(document).ready(function() {
   $(".header-button .button").click(function() {
-    $(".popup-window").css({"top": $(window).scrollTop() + 50}).addClass("active");
+    $(".popup-window").css({"top": $(window).scrollTop() + 20}).addClass("active");
     $(".bg-popup").fadeIn();
 
     $(".bg-popup").click(function() {
@@ -149,6 +159,6 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function() {
-    $(".popup-window").css({"top": $(window).scrollTop() + 50})
+    $(".popup-window").css({"top": $(window).scrollTop() + 20})
   }).scroll();
 });
