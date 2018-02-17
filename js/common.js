@@ -11,11 +11,7 @@ $(function() {
 	$(".slick-carousel").slick({
 		infinite: true,
 		dots: true,
-		autoplay: true,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		speed: 800,
-		autoplaySpeed: 2500
+		speed: 800
 	});
 });
 
