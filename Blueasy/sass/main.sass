@@ -52,7 +52,7 @@
 	flex-direction: column
 
 .navbar
-	padding: 56px 0
+	padding: 30px 0
 	position: fixed
 	z-index: 100
 	width: 100%
@@ -198,7 +198,6 @@
 
 .tabs-wrapper
 	display: flex
-	margin-right: -20px
 	flex-wrap: wrap
 	.active
 		color: $accent
@@ -560,6 +559,24 @@
 	.svg-inline--fa
 		font-size: rem(12px)
 		margin-left: 2px
+
+/* scrollUp */
+#scrollUp
+	bottom: 20px
+	right: 20px
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	background-color: $accent
+	color: #fff
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: .2s
+	.svg-inline--fa
+		font-size: rem(25px)
+	&:hover
+		opacity: .75
 
 // media
 @import "media"

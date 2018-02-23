@@ -28,13 +28,15 @@
 	.navigation
 		position: fixed
 		width: 100%
+		margin-left: auto
+		margin-right: auto
 		display: none
-		height: 100%
+		mih-height: 60%
 		background-color: rgba(0,0,0,.9)
 		z-index: 100
 		top: 0
 		right: 0
-		padding-top: 120px
+		padding-top: 60px
 		text-align: center
 		a
 			display: flex
@@ -208,28 +210,31 @@
   display: none !important
 
 @media (max-width: 575px) 
-  .hidden-xs-down 
-    display: none !important
+	.hidden-xs-down 
+		display: none !important
   
 @media (min-width: 576px)
-  .hidden-sm-up
-    display: none !important
+	.hidden-sm-up
+		display: none !important
 
 @media (max-width: 767px) 
-  .hidden-sm-down 
-    display: none !important
+	.hidden-sm-down 
+		display: none !important
 
 @media (min-width: 768px) 
-  .hidden-md-up 
-    display: none !important
+	.hidden-md-up 
+		display: none !important
+
+	.navigation
+		display: block !important
 
 @media (max-width: 991px) 
-  .hidden-md-down 
-    display: none !important
+	.hidden-md-down 
+		display: none !important
 
 @media (min-width: 992px) 
-  .hidden-lg-up 
-    display: none !important
+	.hidden-lg-up 
+		display: none !important
 
 @media (max-width: 1199px) 
 	.hidden-lg-down 
@@ -239,5 +244,5 @@
 	.hidden-xl-up
 		display: none !important
 
-.hidden-xl-down 
-	display: none !important
+	.hidden-xl-down 
+		display: none !important

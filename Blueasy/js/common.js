@@ -1,15 +1,18 @@
-$(".sandwich").click(function() {
-	$(".sandwich").toggleClass("sandwich-active");
-	$(".navigation").slideToggle(500);
+$(document).ready(function() {
+	$(".sandwich").click(function() {
+		$(this).toggleClass("sandwich-active");
+		$(".navigation").slideToggle();
+		return false;
+	});	
 });
 
-$(function() {
-	if ($(window).width() < 768) {
-		$(".navigation").click(function() {
-			$(".sandwich").toggleClass("sandwich-active");
-			$(".navigation").slideToggle(500);
-		})	
-	}
+$(document).mouseup(function (e) {
+    var container = $(".navigation");
+    var container2 = $(".sandwich");
+    if (container.has(e.target).length === 0 && container2.has(e.target).length === 0){
+        container.hide();
+        $(".sandwich").removeClass("sandwich-active");
+    }
 });
 
 
@@ -34,4 +37,10 @@ $(document).ready(function(){
 $(window).ready(function() { 
 	$(".loader-inner").fadeOut(); 
 	$(".loader").delay(400).fadeOut("slow"); 
+});
+
+$(function(){
+  $.scrollUp({
+  	scrollText: '<i class="fas fa-arrow-up"></i>'
+  });
 });
