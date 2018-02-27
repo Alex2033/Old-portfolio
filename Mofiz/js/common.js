@@ -34,6 +34,8 @@ $(function() {
 		autoplay: true,
 		autoplaySpeed: 4000,
 		speed: 1500,
+		pauseOnHover: false,
+		pauseOnFocus: false,
 		responsive: [
 	    {
 			breakpoint: 991,
@@ -67,6 +69,8 @@ function slick_slider() {
 		autoplay: true,
 		autoplaySpeed: 4000,
 		speed: 1500,
+		pauseOnHover: false,
+		pauseOnFocus: false,
 		responsive: [
 		{
 			breakpoint: 99999,
@@ -113,9 +117,10 @@ $(function() {
 		infinite: true,
 		autoplay: true,
 		autoplaySpeed: 4000,
-		speed: 1500,
+		speed: 1000,
 		fade: true,
-		cssEase: 'linear'
+		pauseOnHover: false,
+		pauseOnFocus: false
 	});
 
 });
