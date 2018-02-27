@@ -31,6 +31,9 @@ $(function() {
 		slidesToScroll: 2,
 		arrows: false,
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		speed: 1500,
 		responsive: [
 	    {
 			breakpoint: 991,
@@ -61,6 +64,9 @@ function slick_slider() {
     }
     wrapper.slick({
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		speed: 1500,
 		responsive: [
 		{
 			breakpoint: 99999,
@@ -104,7 +110,12 @@ $(function() {
 		slidesToScroll: 1,
 		arrows: false,
 		dots: true,
-		infinite: true
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		speed: 1500,
+		fade: true,
+		cssEase: 'linear'
 	});
 
 });
@@ -128,6 +139,9 @@ $(function() {
 
 	$(".clients-list").slick({
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		speed: 1500,
 		responsive: [
 		{
 			breakpoint: 9999,

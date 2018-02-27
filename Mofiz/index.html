@@ -48,7 +48,7 @@
 			  <defs>
 			    <filter id="goo">
 			      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+			      <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
 			      <feBlend in="SourceGraphic" in2="goo" />
 			  	</filter>
 			  </defs>
@@ -543,7 +543,7 @@
 											gies for resourcegrowstrategies
 										</p>
 									</div>
-									<time class="data">26/11/2017</time>
+									<div class="data">26/11/2017</div>
 								</div>	
 							</a>
 						</li>
@@ -558,7 +558,7 @@
 											gies for resourcegrowstrategies
 										</p>
 									</div>
-									<time class="data">01/02/2017</time>
+									<div class="data">01/02/2017</div>
 								</div>	
 							</a>
 						</li>
@@ -573,7 +573,7 @@
 											gies for resourcegrowstrategies
 										</p>
 									</div>
-									<time class="data">15/08/2017</time>
+									<div class="data">15/08/2017</div>
 								</div>	
 							</a>
 						</li>
@@ -588,7 +588,7 @@
 											gies for resourcegrowstrategies
 										</p>
 									</div>
-									<time class="data">29/04/2017</time>
+									<div class="data">29/04/2017</div>
 								</div>
 							</a>
 						</li>
@@ -690,19 +690,19 @@
 							<form action="#" class="contact-form">
 								<div class="row">
 									<div class="col-12">
-										<input type="text" name="name" placeholder="your name:" class="contact-form__item">
+										<input type="text" name="name" placeholder="your name:" class="contact-form__item" required="required">
 									</div>
 									<div class="col-md-6 col-sm-12 col-12">
-										<input type="email" name="email" placeholder="your mail:" class="contact-form__item">
+										<input type="email" name="email" placeholder="your mail:" class="contact-form__item" required="required">
 									</div>
 									<div class="col-md-6 col-sm-12 col-12">
-										<input type="phone" name="phone" placeholder="your phone:" class="contact-form__item">
+										<input type="text" name="phone" placeholder="your phone:" class="contact-form__item" required="required">
 									</div>
 									<div class="col-12">
-										<textarea name="message" placeholder="your message:" class="contact-form__item contact-form__area"></textarea>
+										<textarea name="message" placeholder="your message:" class="contact-form__item contact-form__area" required="required"></textarea>
 									</div>
 									<div class="col-12">
-										<button type="sumbit" class="button">Send message</button>
+										<button type="submit" class="button">Send message</button>
 									</div>
 								</div>
 							</form>
