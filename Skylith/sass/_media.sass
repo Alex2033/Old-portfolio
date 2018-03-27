@@ -1,0 +1,269 @@
+@import "vars"
+
+@media (max-width: 1170px)
+	
+	.container
+		max-width: 94%
+		width: 94%
+
+	.hero .slick-dots
+		margin-left: 0
+		left: initial
+		right: 20px
+
+@media (max-width: 991.99px)
+	
+	.services-list
+		justify-content: center
+
+	.services-list__item
+		width: calc(33.3333% - 30px)
+
+	.skills__img
+		min-height: 470px
+
+	.facts
+		padding-top: 50px
+		padding-bottom: 50px
+
+	.photos-item-1
+		width: calc(33.3333% - 30px)
+
+	.photos-item-2
+		width: calc(33.3333% - 30px)
+
+	.photos-item-3
+		width: calc(33.3333% - 30px)
+
+	.photos-item-4
+		width: calc(58% - 30px)
+
+	.photos-item-5
+		width: calc(42% - 30px)
+
+	.clients-list
+		display: block
+
+	.contact-form__name,
+	.contact-form__email
+		width: 100%
+		margin-left: 0
+		margin-right: 0
+
+	.footer-list__item
+		width: calc(33.3333% - 30px)
+
+	.agency-block
+		display: none
+		
+
+@media (max-width: 767.99px)
+
+	.services-list__item
+		width: calc(50% - 30px)
+		min-width: 230px
+
+	.portfolio-list__item
+		width: 100%
+
+	.photos-item-1
+		width: calc(50% - 30px)
+
+	.photos-item-2
+		width: calc(40% - 30px)
+		order: 3 
+
+	.photos-item-3
+		width: calc(50% - 30px)
+		order: 2
+
+	.photos-item-4
+		width: calc(60% - 30px)
+
+	.photos-item-5
+		width: calc(100% - 30px)
+
+	.testimonials
+		.slick-list
+			margin-bottom: 30px
+
+	.blog-list__body
+		padding: 15px 0
+
+	.contact-form, .contact-text
+		width: 100%
+
+	.contact-form
+		margin-bottom: 40px
+
+	#map
+		min-height: 340px
+			
+@media (max-width: 650px)
+	
+	.title
+		font-size: rem(44px)
+
+	.hero .slick-dots
+		right: 10px
+		max-width: initial
+		width: initial
+		li
+			button
+				&:after
+					left: 15px
+
+	.skills
+		margin: 0
+		.h2
+			text-align: center	
+
+	.skills__text,
+	.skills__img
+		width: 100%
+		margin: 0
+
+	.skills__text
+		padding-top: 50px
+		padding-bottom: 50px
+
+	.skills__img
+		min-height: 570px
+
+	.footer-list__item
+		width: calc(50% - 30px)
+
+	.follow-block
+		display: none
+
+@media (max-width: 576px)
+
+	.services, .facts,
+	.team, .photos, .clients, .testimonials,
+	.blog, .contact
+		padding-top: 50px !important
+		padding-bottom: 50px !important
+
+	.services-list__item
+		width: calc(100% - 30px)
+		max-width: 280px
+
+	.facts-list__item
+		flex-direction: column
+		text-align: center
+		min-width: 180px
+
+	.facts-list__icon
+		margin: 0
+		margin-bottom: 10px
+
+	.photos
+		.container
+			max-width: 100%
+			width: 100%
+
+	.photos-wrapper
+		margin: 0
+
+	.photos-item
+		background-position: top center
+		margin: 0
+		width: 100%
+
+	.photos-item-2
+		order: 2
+
+	.photos-item-3
+		order: 3
+
+@media (max-width: 480px)
+
+	.hero-carousel__item
+		text-align: center
+		min-height: 520px
+
+	.hero-btns
+		justify-content: center
+
+	.about
+		padding-top: 50px
+		padding-bottom: 50px
+
+	.load-btn
+		padding-top: 20px
+		padding-bottom: 20px
+
+	.skills__img
+		min-height: 370px
+
+	.facts-list__item
+		width: 100%	
+
+	.team-carousel
+		margin: 0
+
+	.team-carousel__item
+		margin: 0
+
+	.h2, .subtitle
+		padding: 0
+		text-align: center
+
+	.h2
+		font-size: rem(25px)
+
+	.subtitle
+		&:before
+			left: 20%
+		&:after
+			content: ''
+			position: absolute
+			right: 20%
+			top: 50%	
+			width: 30px
+			height: 1px
+			margin-top: -0.5px
+
+	.blockquote
+		font-size: rem(20px)
+
+	.portfolio-list__text
+		left: 20px
+		bottom: 30px
+
+	.address-link
+		font-size: rem(12px)
+
+	.footer
+		padding-top: 50px
+		padding-bottom: 50px
+
+@media (max-width: 320px)
+
+	.services
+		.h2
+			br
+				display: none
+
+	.services-list__item
+		width: calc(100% - 30px)
+		text-align: center
+
+	.services-list__icon
+		margin-left: auto
+		margin-right: auto
+
+	.contact-button
+		margin-left: auto
+		margin-right: auto
+
+	.footer-list__item
+		width: calc(100% - 30px)
+		text-align: center
+
+	.welcome-block
+		margin-bottom: 20px
+
+	.copyright
+		.footer__title
+			margin-bottom: 0
