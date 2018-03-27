@@ -3,31 +3,6 @@ $(window).ready(function() {
 	$(".loader").delay(400).fadeOut("slow"); 
 });
 
-$('.header-text, .subtitle, .subtitle-text, .team-carousel__name').viewportChecker({
-    classToAdd: 'moveInLeft', 
-    offset: 10
-});
-
-$('.title, .h2, .team-carousel__job').viewportChecker({
-    classToAdd: 'moveInRight', 
-    offset: 10
-});
-
-$('.hero-btns').viewportChecker({
-    classToAdd: 'fadeIn', 
-    offset: 10
-});
-
-$('.blockquote, .portfolio-list__item').viewportChecker({
-    classToAdd: 'zoomIn', 
-    offset: 10
-});
-
-$('.services-list__item').viewportChecker({
-    classToAdd: 'jackInTheBox', 
-    offset: 10
-});
-
 $(function() {
 
 	$(".hero-carousel").slick({
