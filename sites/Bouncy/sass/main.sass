@@ -231,6 +231,13 @@
 		left: 50%
 		transform: translate(-50%, -50%)
 
+	&:nth-of-type(1)
+		animation-delay: .45s
+	&:nth-of-type(2)
+		animation-delay: .3s
+	&:nth-of-type(3)
+		animation-delay: .15s
+
 /* ===== WORKS ===== */
 
 .works-item
@@ -262,6 +269,13 @@
 			opacity: 0
 		.fi
 			opacity: 1
+
+.works-item-1
+	animation-delay: .15s
+.works-item-2
+	animation-delay: .3s
+.works-item-3
+	animation-delay: .45s
 
 .works-title
 	font-size: rem(20px)
@@ -310,6 +324,14 @@
 
 .menu-icons__item
 	margin-bottom: 17px
+	&:nth-of-type(1)
+		animation-delay: .25s
+	&:nth-of-type(2)
+		animation-delay: .5s
+	&:nth-of-type(3)
+		animation-delay: .75s
+	&:nth-of-type(4)
+		animation-delay: 1s
 
 .menu__icon
 	width: 54px
@@ -345,6 +367,12 @@
 	transition: transform .5s
 	&:hover
 		transform: scale(1.1)
+	&:nth-of-type(1)
+		animation-delay: .25s
+	&:nth-of-type(2)
+		animation-delay: .5s
+	&:nth-of-type(3)
+		animation-delay: .75s
 		
 .progress
     width: 124px
@@ -515,6 +543,21 @@
 		transform: translateX(-50%)
 		transition: width .5s
 
+	&:nth-of-type(1)
+		animation-delay: .15s
+	&:nth-of-type(2)
+		animation-delay: .3s
+	&:nth-of-type(3)
+		animation-delay: .45s
+	&:nth-of-type(4)
+		animation-delay: .65s
+	&:nth-of-type(5)
+		animation-delay: .8s
+	&:nth-of-type(6)
+		animation-delay: .95s
+	&:nth-of-type(7)
+		animation-delay: 1.1s
+
 	&:hover
 		&::before
 			width: 38px
@@ -663,6 +706,7 @@
 	position: relative
 	@extend %bg
 	min-height: 364px
+	animation-delay: .15s
 	&::before
 		content: ''
 		position: absolute
@@ -732,6 +776,9 @@
 	font-size: 20px
 	color: $dark
 
+.team-info__text
+	animation-delay: .3s
+
 .team-info__position
 	font-style: italic
 	text-transform: uppercase
@@ -745,6 +792,12 @@
 	margin-bottom: 30px
 	&:last-child
 		margin-bottom: 0
+	&:nth-of-type(1)
+		animation-delay: .45s
+	&:nth-of-type(2)
+		animation-delay: .6s
+	&:nth-of-type(3)
+		animation-delay: .75s
 
 .team-item--1
 	.team-skills__item
@@ -880,6 +933,7 @@
 
 .testi__text
 	margin: 0
+	animation-delay: .3s
 	p
 		font-weight: 400
 
@@ -891,10 +945,12 @@
 	font-style: normal
 	font-weight: 700
 	color: $accent
+	animation-delay: .45s
 
 .test__position
 	color: $dark
 	font-size: 14px
+	animation-delay: .6s
 
 
 /* ===== BLOG ===== */
@@ -960,17 +1016,20 @@
 	color: $gray
 	margin-bottom: 10px
 	font-family: 'Open Sans', sans-serif
+	animation-delay: .15s
 
 .blogs__author
 	display: block
 	text-transform: uppercase
 	font-family: 'Source Sans Pro', sans-serif
 	margin-bottom: 10px
+	animation-delay: .3s
 
 .blogs__author-name
 	font-size: 15px
 	color: lighten($dark, 15%)
 	transition: color .25s
+	animation-delay: .45s
 	.accent-color
 		transition: color .25s
 	&:hover
@@ -982,11 +1041,13 @@
 	color: lighten($dark, 15%)
 	font-family: 'Source Sans Pro', sans-serif
 	transition: color .25s
+	animation-delay: .6s
 	&:hover
 		color: $light
 
 .blogs__text
 	margin-bottom: 35px
+	animation-delay: .75s
 	p
 		font-weight: 400
 
@@ -994,6 +1055,7 @@
 	color: $light
 	font-size: 16px
 	transition: color .25s
+	animation-delay: .9s
 	&:hover
 		color: #fff
 
@@ -1021,6 +1083,13 @@
 		.price-item__hover
 			bottom: 0
 			opacity: 1
+
+.price-item-1
+	animation-delay: .25s
+.price-item-2
+	animation-delay: .5s
+.price-item-3
+	animation-delay: .75s
 
 
 .price-item__header
