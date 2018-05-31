@@ -2,7 +2,7 @@ $(window).ready(function() {
 	$("#outer-barG").fadeOut(); 
 	$(".preloader-wrap").delay(200).fadeOut("slow"); 
 });
-
+ 
 $(document).ready(function() {
 	$(".about-item__icon").waypoint(function() {
 		$(".about-item__icon").addClass("animated zoomIn");
