@@ -4,6 +4,20 @@ $(window).ready(function() {
 });
  
 $(document).ready(function() {
+	$(".advantages__wrapper").waypoint(function() {
+		$('.advantages__amount').each(function () {
+			$(this).prop('Counter',0).animate({
+				Counter: $(this).text()
+			}, {
+				duration: 2000,
+				easing: 'swing',
+				step: function (now) {
+					$(this).text(Math.ceil(now));
+				}
+			});
+		});	
+	}, { offset: '100%'});
+
 	$(".about-item__icon").waypoint(function() {
 		$(".about-item__icon").addClass("animated zoomIn");
 	}, { offset: '100%'});
@@ -74,20 +88,6 @@ $(function() {
 	});
 
 });
-
-$(".advantages").waypoint(function() {
-	$('.advantages__amount').each(function () {
-		$(this).prop('Counter',0).animate({
-			Counter: $(this).text()
-		}, {
-			duration: 3000,
-			easing: 'swing',
-			step: function (now) {
-				$(this).text(Math.ceil(now));
-			}
-		});
-	});	
-}, { offset: '100%'});
 
 
 $(function() {
